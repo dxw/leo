@@ -25,14 +25,14 @@ abstract class AbstractMatcher implements MatcherInterface
      * {@inheritdoc}
      *
      * @param  mixed $actual
-     * @return Match
+     * @return LeoMatch
      */
     public function match($actual = '')
     {
         $isMatch = $this->doMatch($actual);
         $isNegated = $this->isNegated();
 
-        return new Match($isMatch xor $isNegated, $this->expected, $actual, $isNegated);
+        return new LeoMatch($isMatch xor $isNegated, $this->expected, $actual, $isNegated);
     }
 
     /**

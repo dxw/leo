@@ -7,7 +7,7 @@ namespace Peridot\Leo\Matcher;
  *
  * @package Peridot\Leo\Matcher
  */
-class Match
+class LeoMatch
 {
     /**
      * @var bool
